@@ -7,9 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
-
+<header>
+    @include('layouts.sidebar')
+</header>
 <body class="bg-gray-100">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-10">
         <h1 class="text-4xl font-bold my-8">Product</h1>
         <div>
             @if(session()->has('success'))
@@ -29,12 +31,12 @@
         <table class="w-full bg-white rounded-lg overflow-hidden">
             <thead class="bg-blue-500 text-white">
                 <tr>
-                    <th class="px-4 py-2">NPM</th>
-                    <th class="px-4 py-2">Nama</th>
-                    <th class="px-4 py-2">Kelas</th>
-                    <th class="px-4 py-2">Jurusan</th>
-                    <th class="px-4 py-2">Edit</th>
-                    <th class="px-4 py-2">Delete</th>
+                    <th class="px-2 py-2">NPM</th>
+                    <th class="px-2 py-2">Nama</th>
+                    <th class="px-2 py-2">Kelas</th>
+                    <th class="px-2 py-2">Jurusan</th>
+                    <th class="px-2 py-2">Edit</th>
+                    <th class="px-2 py-2">Delete</th>
                 </tr>
             </thead>
             <tbody>
