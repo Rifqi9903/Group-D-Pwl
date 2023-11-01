@@ -38,8 +38,13 @@
                 <label class="block text-gray-700 mb-2">Jurusan</label>
                 <input type="text" name="jurusan" placeholder="jurusan" value="{{$mahasiswa->jurusan}}" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
             </div>
-            <div>
-                <input type="submit" value="Update" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" />
+            <div class="flex space-x-4">
+                <div class="">
+                    <input type="submit" value="Update" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" />
+                </div>
+                <div class="mt-2">
+                    <a href="{{route('mahasiswa.index')}}" class="bg-red-500 text-white px-4 py-2 rounded cursor-pointer">Kembali</a>
+                </div>
             </div>
         </form>
     </div>
