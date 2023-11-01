@@ -19,12 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
-Route::get('/mahasiswa/add', [MahasiswaController::class, 'add'])->name('mahasiswa.add');
-Route::post('/mahasiswa', [MahasiswaController::class, 'daftar'])->name('mahasiswa.daftar');
-Route::get('/mahasiswa/{mahasiswa}/edit', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
-Route::put('/mahasiswa/{mahasiswa}/update', [MahasiswaController::class, 'update'])->name('mahasiswa.update');
-Route::delete('/mahasiswa/{mahasiswa}/destroy', [MahasiswaController::class, 'destroy'])->name('mahasiswa.destroy');
+Route::get('/admin/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
+Route::get('/admin/mahasiswa/add', [MahasiswaController::class, 'add'])->name('mahasiswa.add');
+Route::post('/admin/mahasiswa', [MahasiswaController::class, 'daftar'])->name('mahasiswa.daftar');
+Route::get('/admin/mahasiswa/{mahasiswa}/edit', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
+Route::put('/admin/mahasiswa/{mahasiswa}/update', [MahasiswaController::class, 'update'])->name('mahasiswa.update');
+Route::delete('/admin/mahasiswa/{mahasiswa}/destroy', [MahasiswaController::class, 'destroy'])->name('mahasiswa.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

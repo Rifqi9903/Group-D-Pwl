@@ -17,8 +17,13 @@
                 </div>
             @endif
         </div>
-        <div class="my-4">
-            <a href="{{route('mahasiswa.add')}}" class="bg-blue-500 text-white px-4 py-2 rounded">Tambah Mahasiswa</a>
+        <div class="flex justify-between">
+            <div class="my-4">
+                <a href="{{route('mahasiswa.add')}}" class="bg-blue-500 text-white px-4 py-2 rounded">Tambah Mahasiswa</a>
+            </div>
+            <div class="my-4">
+                <a href="/admin" class="bg-red-500 text-white px-4 py-2 rounded">Kembali</a>
+            </div>
         </div>
         <table class="w-full bg-white rounded-lg overflow-hidden">
             <thead class="bg-blue-500 text-white">
