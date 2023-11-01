@@ -1,11 +1,11 @@
-<div class="fixed left-0 top-0 w-55 h-full bg-gray-900 p-4">
+<div class="fixed left-0 top-0 w-60 h-full bg-gray-900 p-4">
         <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
             <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover">
             <span class="text-lg font-bold text-white ml-3">GRUP D</span>
         </a>
         <ul class="mt-4">
             <li class="mb-1 group active">
-                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white">
+                <a href="{{route('home')}}" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white">
                     <!-- from remixicon-->
                     <i class="ri-home-2-line mr-3 text-lg"></i>
                     <span class="text-sm">Dashboard</span>
