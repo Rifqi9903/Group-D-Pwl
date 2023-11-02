@@ -38,14 +38,13 @@
             <li class="mb-2 group ">
                 <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <x-dropdown-link :href="route('logout')" 
+                            <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                               <i class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white border-white">{{ __('Log Out') }}</i> 
+                               <i class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white">{{ __('Log Out') }}</i>
                             </x-dropdown-link>
-                        </form>
-                </a>
+                </form>
             </li>
-            
+
         </ul>
 </div>
