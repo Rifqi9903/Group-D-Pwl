@@ -21,10 +21,10 @@
             </div>
             <div class="flex justify-between">
                 <div class="my-4">
-                    <a href="{{route('mahasiswa.add')}}" class="bg-blue-500 text-white px-4 py-2 rounded">Tambah Mahasiswa</a>
+                    <x-crud-button class="bg-blue-500 " href="{{route('mahasiswa.add')}}" title="Tambah Mahasiswa" />
                 </div>
                 <div class="my-4">
-                    <a href="/admin" class="bg-red-500 text-white px-4 py-2 rounded">Kembali</a>
+                    <x-crud-button class="bg-red-500 " href="/admin" title="Kembali" />
                 </div>
             </div>
             <table class="w-full bg-white rounded-lg overflow-hidden">
@@ -46,7 +46,7 @@
                             <td class="border px-4 py-2">{{$mahasiswa->kelas}}</td>
                             <td class="border px-4 py-2">{{$mahasiswa->jurusan}}</td>
                             <td class="border px-4 py-2">
-                                <a href="{{route('mahasiswa.edit', ['mahasiswa' => $mahasiswa])}}" class="bg-yellow-500 text-white px-4 py-1 rounded">Edit</a>
+                                <x-crud-button class="bg-yellow-500 " href="{{route('mahasiswa.edit', ['mahasiswa' => $mahasiswa])}}" title="Edit" />
                             </td>
                             <td class="border px-4 py-2">
                                 <form method="post" action="{{route('mahasiswa.destroy', ['mahasiswa' => $mahasiswa] )}}" >

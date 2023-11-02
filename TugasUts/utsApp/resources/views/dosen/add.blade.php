@@ -36,7 +36,7 @@
                     <input type="submit" value="Tambah" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer " />
                 </div>
                 <div class="mt-2">
-                    <a href="{{route('dosen.index')}}" class="bg-red-500 text-white px-4 py-2 rounded cursor-pointer">Kembali</a>
+                    <x-crud-button class="bg-red-500 " href="{{route('dosen.index')}}" title="Kembali" />
                 </div>
             </div>
 
