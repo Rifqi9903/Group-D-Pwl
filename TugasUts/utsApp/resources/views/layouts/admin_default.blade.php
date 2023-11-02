@@ -8,9 +8,9 @@
     <!-- start sidebar -->
     @include('layouts.sidebar')
     <!-- end sidebar -->
-
+    <x-topbar title="Dasboard" />
     <!-- start main -->
-    @include('layouts.body')
+
     <!-- end main -->
     @include('layouts.footer')
     <!-- start script -->

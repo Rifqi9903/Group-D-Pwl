@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-bold my-8">Menambah Mahasiswa</h1>
+        <x-head-title title="Menambah Mahasiswa" />
         <div>
             @if($errors->any())
             <ul class="bg-red-500 text-white px-4 py-2 rounded">

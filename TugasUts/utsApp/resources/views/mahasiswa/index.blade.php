@@ -8,10 +8,10 @@
 </header>
 <body class="bg-gray-100">
     @include('layouts.sidebar')
-    @include('layouts.body')
+    <x-topbar title="Crud Data" slash="/" subTitle="Mahasiswa" />
     <div class="w-[cacl(100%-256px)] ml-64">
         <div class="container mx-auto px-10">
-            <h1 class="text-4xl font-bold my-8">Product</h1>
+            <x-head-title title="Mahasiswa" />
             <div>
                 @if(session()->has('success'))
                     <div class="bg-green-500 text-white px-4 py-2 rounded">
