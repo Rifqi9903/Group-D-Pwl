@@ -11,7 +11,6 @@ class Dosen extends Model
     protected $fillable = [
         'nidn',
         'nama'
-        
 
     ];
 }

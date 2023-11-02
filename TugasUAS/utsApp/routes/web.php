@@ -20,9 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::get('/admin',[HomeController::class,'index'])->middleware('auth')->name('home');
+
+
 Route::middleware('auth')->group(function () {
 //Mahasiswa
     Route::get('/admin/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
@@ -41,10 +43,14 @@ Route::middleware('auth')->group(function () {
 
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::post('/logout', 'Auth\LoginController@logout')->name('logout')->middleware('auth');
 
 
-Route::get('/home',[HomeController::class,'index'])->middleware('auth')->name('home');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
