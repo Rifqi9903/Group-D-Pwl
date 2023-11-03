@@ -40,7 +40,7 @@
                 @csrf
                 <a :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white cursor-pointer">
                     <!-- from remixicon-->
-                    <i class="ri-file-edit-line mr-3 text-lg"></i>
+                    <i class="ri-logout-box-line mr-3 text-lg"></i>
                     <span class="text-sm">Logout</span>
                 </a>
                 </form>
