@@ -35,16 +35,15 @@
                     <span class="text-sm">Setting</span>
                 </a>
             </li>
-            <li class="mb-2 group ">
+            <li class="mb-1 group">
                 <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                               <i class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white">{{ __('Log Out') }}</i>
-                            </x-dropdown-link>
+                @csrf
+                <a :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white cursor-pointer">
+                    <!-- from remixicon-->
+                    <i class="ri-file-edit-line mr-3 text-lg"></i>
+                    <span class="text-sm">Logout</span>
+                </a>
                 </form>
             </li>
-
         </ul>
 </div>
