@@ -22,15 +22,8 @@
         <form method="post" action="{{route('dosen.daftar')}}" class="bg-white p-6 rounded-lg">
             @csrf
             @method('post')
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">NIDN</label>
-                <input type="number" name="nidn" placeholder="nidn" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">Nama</label>
-                <input type="text" name="nama" placeholder="nama" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
-
+            <x-crud-form title="NIDN" type="number" name="nidn" placeholder="nidn" />
+            <x-crud-form title="Nama" type="text" name="nama" placeholder="nama" />
             <div class="flex space-x-4 ">
                 <div>
                     <input type="submit" value="Tambah" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer " />

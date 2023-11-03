@@ -22,22 +22,10 @@
         <form method="post" action="{{route('mahasiswa.daftar')}}" class="bg-white p-6 rounded-lg">
             @csrf
             @method('post')
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">NPM</label>
-                <input type="number" name="npm" placeholder="npm" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">Nama</label>
-                <input type="text" name="nama" placeholder="nama" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">Kelas</label>
-                <input type="text" name="kelas" placeholder="kelas" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 mb-2">Jurusan</label>
-                <input type="text" name="jurusan" placeholder="jurusan" class="w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" />
-            </div>
+            <x-crud-form title="NPM" type="number" name="npm" placeholder="npm" />
+            <x-crud-form title="Nama" type="text" name="nama" placeholder="nama" />
+            <x-crud-form title="Kelas" type="text" name="kelas" placeholder="kelas" />
+            <x-crud-form title="Jurusan" type="text" name="jurusan" placeholder="jurusan" />
             <div class="flex space-x-4 ">
                 <div>
                     <input type="submit" value="Tambah" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer " />
