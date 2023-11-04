@@ -3,9 +3,6 @@
 <head>
     @include('layouts.header')
 </head>
-<header>
-    @include('layouts.sidebar')
-</header>
 <body class="bg-gray-100">
     @include('layouts.sidebar')
     <x-topbar title="Crud Data" slash="/" subTitle="Dosen" />
