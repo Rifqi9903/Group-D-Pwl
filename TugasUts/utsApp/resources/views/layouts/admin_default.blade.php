@@ -10,7 +10,7 @@
     <!-- end sidebar -->
     <x-topbar title="Dasboard" />
     <!-- start main -->
-
+    @include('layouts.content')
     <!-- end main -->
     @include('layouts.footer')
     <!-- start script -->
