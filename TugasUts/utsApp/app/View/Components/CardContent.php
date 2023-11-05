@@ -9,12 +9,14 @@ use Illuminate\View\Component;
 class CardContent extends Component
 {
     public $title;
+    public $href;
     /**
      * Create a new component instance.
      */
-    public function __construct($title)
+    public function __construct($title,$href)
     {
         $this->title = $title;
+        $this->href = $href;
     }
 
     /**
